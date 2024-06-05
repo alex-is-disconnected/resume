@@ -17,7 +17,8 @@ body {
 main {
   padding: 32px;
   background-color: gainsboro;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
 }
