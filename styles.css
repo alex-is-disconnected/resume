@@ -177,6 +177,7 @@ header {
 
 .work-left > h3 {
   font-size: 1em;
+  margin-bottom: 1em;
 }
 
 .date {
@@ -201,8 +202,12 @@ header {
     max-width: 35vw;
   }
 
+  .work-left {
+    width: 24vw;
+  }
+
   .work-right {
-    width: unset;
+    width: fit-content;
   }
 }
 
@@ -238,6 +243,10 @@ header {
   .work-left > h3 > br {
     display: none;
   }
+
+  .work-left > .date {
+    margin-bottom: 0;
+  }
 }
 
 @media print {
@@ -255,11 +264,30 @@ header {
   }
 
   #header1 {
-    max-width: fit-content;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  #cat-lower {
+    max-width: 35vw;
   }
 
   .work-right {
-    width: 53vw;
+    width: fit-content;
+  }
+
+  .work-left {
+    width: 24vw;
+  }
+
+  .work-left > h3 > br {
+    display: none;
+  }
+
+  .work-left > .date > br {
+    display: block;
   }
 
   #cat-upper > h1 {
