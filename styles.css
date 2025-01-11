@@ -185,6 +185,61 @@ header {
   font-weight: 300;
 }
 
+@media (max-width: 1030px) {
+  #categories {
+    flex-direction: column;
+  }
+
+  #header1 {
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  #cat-lower {
+    max-width: 35vw;
+  }
+
+  .work-right {
+    width: unset;
+  }
+}
+
+@media (max-width: 600px) {
+  #header1 {
+    flex-direction: column;
+  }
+
+  #cat-lower {
+    max-width: none;
+  }
+
+  #edu {
+    flex-direction: column;
+  }
+
+  #languages {
+    width: 100%;
+  }
+
+  #school {
+    width: 100%;
+  }
+
+  #work > header {
+    flex-direction: column;
+  }
+
+  .work-left {
+    width: 100%;
+  }
+
+  .work-left > h3 > br {
+    display: none;
+  }
+}
+
 @media print {
   /* Remove default margins */
   html,
@@ -196,6 +251,7 @@ header {
   main {
     background-color: transparent;
     padding: 0;
+    height: fit-content;
   }
 
   #header1 {
